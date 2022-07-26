@@ -6,7 +6,8 @@ public class Main {
         System.out.println("nhập vào 1: vẽ hình chữ nhật");
         System.out.println("nhập vào 2: vẽ hình tma giác đứng");
         System.out.println("nhập vào 3: vẽ hình tam giác ngược");
-        System.out.println("nhập vào 4 để thoát ra");
+        System.out.println("nhập vào 4: vẽ hình tam giác cân");
+        System.out.println("nhập vào 5 để thoát ra");
         Scanner scanner = new Scanner(System.in);
         int input = scanner.nextInt();
         int chieuDai;
@@ -42,6 +43,19 @@ public class Main {
                     System.out.print(" * ");
                 }
                 System.out.println(" ");
+            }
+        }
+        if (input == 4){
+            System.out.println("nhập vào chiều cao tam giác");
+            height = scanner.nextInt();
+            for (int i = 1; i <= height ; i++) {
+                for (int j = 1; j <= height - i ; j++) {
+                    System.out.print(" ");
+                }
+                for (int k = 1; k <= 2*i-1 ; k++) {
+                    System.out.print("*");
+                }
+                System.out.print("\n");
             }
         }
 
